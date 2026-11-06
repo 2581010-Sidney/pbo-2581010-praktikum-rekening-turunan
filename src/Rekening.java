@@ -1,10 +1,10 @@
-public class Rekening {
+public abstract class Rekening {
     private String nomor;
     private String pemilik;
     protected int saldo; // boleh diakses class turunan
 
     public Rekening(String nomor, String pemilik, int saldo){
-        this.nomor = nomor; // field milik objek Rekening | pareameter saat new Rekening
+        this.nomor = nomor; // field(data) milik objek Rekening | pareameter saat new Rekening
         this.pemilik = pemilik;
         this.saldo = saldo;
     }
@@ -45,3 +45,4 @@ public class Rekening {
         return "Rp" + String.format("%,d", angka).replace(',', '.');
     }
 }
+

@@ -15,6 +15,6 @@ public class Tabungan extends Rekening {
     @Override //Penanda: subclass menyediakan versi sendiri dari method parent
     public void cetakInfo(){
         super.cetakInfo();
-        System.out.println("       Tabulan, bunga " + bungaPersen + "% per bulan");
+        System.out.println("       Tabungan, bunga " + bungaPersen + "% per bulan");
     }
 }
