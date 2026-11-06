@@ -1,7 +1,7 @@
 public class Rekening {
     private String nomor;
     private String pemilik;
-    private int saldo;
+    protected int saldo; // boleh diakses class turunan
 
     public Rekening(String nomor, String pemilik, int saldo){
         this.nomor = nomor; // field milik objek Rekening | pareameter saat new Rekening
@@ -40,7 +40,8 @@ public class Rekening {
         System.out.println(String.format("%s | %-6s | %12s", nomor, pemilik, formatRupiah(saldo)));
     }
 
-    private String formatRupiah(int angka) {
+    // ps: bisa di pakai di class turunan
+    protected static String formatRupiah(int angka) {
         return "Rp" + String.format("%,d", angka).replace(',', '.');
     }
 }
