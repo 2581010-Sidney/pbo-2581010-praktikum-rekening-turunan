@@ -40,7 +40,7 @@ public abstract class Rekening {
         System.out.println(String.format("%s | %-6s | %12s", nomor, pemilik, formatRupiah(saldo)));
     }
 
-    // ps: bisa di pakai di class turunan
+    // bisa di pakai di class turunan
     protected static String formatRupiah(int angka) {
         return "Rp" + String.format("%,d", angka).replace(',', '.');
     }

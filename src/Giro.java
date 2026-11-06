@@ -8,7 +8,7 @@ public class Giro extends Rekening {
 
     @Override
     public boolean tarik(int jumlah) {
-        if (jumlah <= 0 || saldo - jumlah < -batasOverdraft){ //ini apa
+        if (jumlah <= 0 || saldo - jumlah < -batasOverdraft){ // apakah jumlah < dari 0 || apakah s-j lebih rendah dari -batas?
             return false;
         }
         saldo -= jumlah;
